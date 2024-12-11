@@ -5,5 +5,4 @@ export const GOOGLE_REDIRECT_URI =
 export const GOOGLE_SCOPES = [
     "https://www.googleapis.com/auth/gmail.readonly",
     "https://www.googleapis.com/auth/userinfo.email",
-    "https://www.googleapis.com/auth/userinfo.profile",
 ].join(" ");
