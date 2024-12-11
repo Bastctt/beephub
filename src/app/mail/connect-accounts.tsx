@@ -16,22 +16,21 @@ export function ConnectAccounts() {
     };
 
     return (
-        <Card>
+        <Card className="max-w-md mx-auto">
             <CardHeader>
                 <CardTitle>Connect Your Email Accounts</CardTitle>
                 <CardDescription>
                     Get started by connecting your email accounts to Mail Hub
                 </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="flex justify-center">
                 <Button
                     onClick={handleGoogleLogin}
-                    className="w-full flex items-center justify-center gap-2"
+                    className="w-auto min-w-[250px] px-10 flex items-center justify-center gap-2"
                 >
                     <Mail className="h-4 w-4" />
                     Connect Gmail Account
                 </Button>
-                {/* Add more providers here */}
             </CardContent>
         </Card>
     );
