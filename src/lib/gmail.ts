@@ -1,8 +1,8 @@
 import { google } from "googleapis";
-// import { cookies } from "next/headers";
+import { cookies } from "next/headers";
 
 // export async function getGmailMessages() {
-//     const accessToken = {/*cookies().get("gmail_access_token")?.value*/ || null};
+//     const accessToken = (await cookies()).get("gmail_access_token")?.value;
 
 //     if (!accessToken) {
 //         throw new Error("No access token found");

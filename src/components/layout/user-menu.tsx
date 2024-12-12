@@ -2,7 +2,8 @@
 
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Instagram, Linkedin, MessageCircle, Mail, Twitter } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle, faWhatsapp, faInstagram, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export function UserMenu() {
     const router = useRouter();
@@ -18,24 +19,24 @@ export function UserMenu() {
                 variant="outline"
                 className="hover:bg-blue-500 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105"
             >
-                <MessageCircle size={20} className="mr-2" />
+                <FontAwesomeIcon icon={faGoogle} className="mr-2" />
                 Google
             </Button>
             <Button variant="outline" className="hover:bg-pink-500 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105">
-                <Instagram size={20} className="mr-2" />
+                <FontAwesomeIcon icon={faInstagram} className="mr-2" />
                 Instagram
             </Button>
             <Button variant="outline" className="hover:bg-blue-700 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105">
-                <Linkedin size={20} className="mr-2" />
+                <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
                 LinkedIn
             </Button>
             <Button variant="outline" className="hover:bg-green-500 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105">
-                <Mail size={20} className="mr-2" />
+                <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
                 WhatsApp
             </Button>
             <Button variant="outline" className="hover:bg-sky-500 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105">
-                <Twitter size={20} className="mr-2" />
-                Twitter
+                <FontAwesomeIcon icon={faXTwitter} className="mr-2" />
+                X
             </Button>
         </div>
     );
