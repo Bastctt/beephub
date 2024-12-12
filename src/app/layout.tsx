@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "BeepHub - Connect your messaging platforms and manage all your communications in one place.",
+    title: "BeepHub - Your app to connect everything.",
     description: "Connect your messaging platforms and manage all your communications in one place.",
     icons: "favicon.ico",
 };

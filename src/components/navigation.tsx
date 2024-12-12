@@ -1,10 +1,17 @@
 "use client";
 
 import { Logo } from './layout/logo';
+import { useRouter } from "next/navigation";
 import { Button } from './ui/button';
 import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Navigation() {
+    const router = useRouter();
+
+    const handleGoogleNavigation = () => {
+        router.push("/register");
+    };
+
     return (
         <div style={{
             position: 'fixed',
@@ -19,12 +26,14 @@ export function Navigation() {
             transform: 'translateX(-50%)'
         }}>
             <nav
-                className="shadow rounded-lg mx-4 my-2"
-                style={{
-                    background: 'linear-gradient(137deg, rgba(17, 18, 20, 0.75) 4.87%, rgba(12, 13, 15, 0.9) 75.88%)',
-                    border: "1px solid rgba(255, 255, 255, 0.1)",
-                    width: "80%"
-                }}
+                className="shadow rounded-lg mx-4 my-2
+                bg-gradient-to-r
+                from-[rgba(255,255,255,0.9)] to-[rgba(240,240,240,0.9)]
+                dark:from-[rgba(17,18,20,0.75)] dark:to-[rgba(12,13,15,0.9)]
+                border border-opacity-10
+                dark:border-white dark:border-opacity-10
+                border-gray-300"
+                style={{ width: "80%" }}
             >
                 <div className="container mx-auto px-6 h-16 flex items-center justify-between">
                     <div className="flex items-center">
@@ -32,24 +41,22 @@ export function Navigation() {
                     </div>
 
                     <div className="hidden md:flex space-x-8">
-                        <a href="#" className="text-[#9c9c9d] hover:text-gray-50 text-[14px] font-medium leading-normal tracking-[0.2px] px-[var(--spacing-1)] py-[var(--spacing-1-5)] whitespace-nowrap rounded-[var(--rounding-sm)] transition-all duration-200 ease-in-out">
+                        <a href="#" className="text-[#9c9c9d] dark:hover:text-gray-50 hover:text-gray-700 text-[14px] font-medium leading-normal tracking-[0.2px] px-[var(--spacing-1)] py-[var(--spacing-1-5)] whitespace-nowrap rounded-[var(--rounding-sm)] transition-all duration-200 ease-in-out">
                             Store
                         </a>
-                        <a href="#" className="text-[#9c9c9d] hover:text-gray-50 text-[14px] font-medium leading-normal tracking-[0.2px] px-[var(--spacing-1)] py-[var(--spacing-1-5)] whitespace-nowrap rounded-[var(--rounding-sm)] transition-all duration-200 ease-in-out">
+                        <a href="#" className="text-[#9c9c9d] dark:hover:text-gray-50 hover:text-gray-700 text-[14px] font-medium leading-normal tracking-[0.2px] px-[var(--spacing-1)] py-[var(--spacing-1-5)] whitespace-nowrap rounded-[var(--rounding-sm)] transition-all duration-200 ease-in-out">
                             Pro
                         </a>
-                        <a href="#" className="text-[#9c9c9d] hover:text-gray-50 text-[14px] font-medium leading-normal tracking-[0.2px] px-[var(--spacing-1)] py-[var(--spacing-1-5)] whitespace-nowrap rounded-[var(--rounding-sm)] transition-all duration-200 ease-in-out">
+                        <a href="#" className="text-[#9c9c9d] dark:hover:text-gray-50 hover:text-gray-700 text-[14px] font-medium leading-normal tracking-[0.2px] px-[var(--spacing-1)] py-[var(--spacing-1-5)] whitespace-nowrap rounded-[var(--rounding-sm)] transition-all duration-200 ease-in-out">
                             Teams
                         </a>
-                        <a href="#" className="text-[#9c9c9d] hover:text-gray-50 text-[14px] font-medium leading-normal tracking-[0.2px] px-[var(--spacing-1)] py-[var(--spacing-1-5)] whitespace-nowrap rounded-[var(--rounding-sm)] transition-all duration-200 ease-in-out">
+                        <a href="#" className="text-[#9c9c9d] dark:hover:text-gray-50 hover:text-gray-700 text-[14px] font-medium leading-normal tracking-[0.2px] px-[var(--spacing-1)] py-[var(--spacing-1-5)] whitespace-nowrap rounded-[var(--rounding-sm)] transition-all duration-200 ease-in-out">
                             Developers
                         </a>
                     </div>
 
-
-                    {/* Right: Action Buttons */}
                     <div className="flex items-center space-x-4">
-                        <Button variant="outline">Log in</Button>
+                        <Button variant="outline" onClick={handleGoogleNavigation}>Log in</Button>
                         <ThemeToggle />
                     </div>
                 </div>

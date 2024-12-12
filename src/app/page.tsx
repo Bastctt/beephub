@@ -2,7 +2,6 @@
 
 import { Navigation } from "@/components/navigation";
 import { UserMenu } from "@/components/layout/user-menu";
-import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
     return (
@@ -16,7 +15,7 @@ export default function Home() {
                             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight break-words whitespace-pre-wrap"
                             style={{ maxWidth: "100%", lineHeight: "0.5" }}
                         >
-                            Welcome to BeepHub,{"\n\n"}your new favorite app.
+                            Your app to{"\n\n"}connect everything.
                         </h1>
                         <p className="text-base sm:text-lg text-muted-foreground max-w-lg sm:max-w-xl lg:max-w-2xl mx-auto">
                             Connect your messaging platforms and manage all your communications in one place.
@@ -28,8 +27,6 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-
-            <Footer />
         </div>
     );
 }
