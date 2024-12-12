@@ -13,7 +13,7 @@ export function UserMenu() {
     };
 
     return (
-        <div className="flex items-center space-x-4">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
             <Button
                 onClick={handleGoogleNavigation}
                 variant="outline"
