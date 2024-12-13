@@ -18,7 +18,7 @@ export default function Home() {
                         >
                             Your app to{"\n\n"}connect everything.
                         </h1>
-                        <p className="text-base sm:text-lg text-muted-foreground max-w-lg sm:max-w-xl lg:max-w-2xl mx-auto">
+                        <p className="text-base sm:text-lg max-w-lg sm:max-w-xl lg:max-w-2xl mx-auto">
                             Connect your messaging platforms and manage all your communications in one place.
                         </p>
                     </section>
