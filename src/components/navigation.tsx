@@ -28,8 +28,8 @@ export function Navigation() {
             <nav
                 className="shadow rounded-lg mx-4 my-2
                 bg-gradient-to-r
-                from-[rgba(255,255,255,0.9)] to-[rgba(240,240,240,0.9)]
-                dark:from-[rgba(17,18,20,0.75)] dark:to-[rgba(12,13,15,0.9)]
+                from-[hsl(var(--background))] to-[#E5E5DC]
+                dark:from-[hsl(var(--background))] dark:to-[hsl(210 15% 12%)]
                 border border-opacity-10
                 dark:border-white dark:border-opacity-10
                 border-gray-300"
