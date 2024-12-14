@@ -11,7 +11,7 @@ export default function Home() {
             <Navigation />
             <main className="flex-grow flex items-center justify-center px-4 sm:px-8">
                 <div className="flex flex-col items-center space-y-6 sm:space-y-8">
-                    <section className="text-center space-y-4 mb-6 sm:mb-10 flex flex-col w-full gap-10">
+                    <section className="text-center space-y-4 mb-12 sm:mb-16 flex flex-col w-full gap-10">
                         <h1
                             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight break-words whitespace-pre-wrap"
                             style={{ maxWidth: "100%", lineHeight: "0.5" }}
@@ -23,7 +23,7 @@ export default function Home() {
                         </p>
                     </section>
 
-                    <div className="mt-6 sm:mt-8 text-center">
+                    <div className="mt-12 sm:mt-16 text-center">
                         <UserMenu />
                     </div>
                 </div>

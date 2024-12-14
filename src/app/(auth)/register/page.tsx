@@ -171,7 +171,7 @@ export default function RegisterPage() {
                                 required
                             />
                         </div>
-                        <div className="space-y-2">
+                        <div className="space-y-2" style={{ marginBottom: "10px" }}>
                             <Label htmlFor="confirmPassword">
                                 Confirm Password
                             </Label>
