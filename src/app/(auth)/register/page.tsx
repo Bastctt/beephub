@@ -81,7 +81,7 @@ export default function RegisterPage() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="min-h-screen flex items-center justify-center">
             <Card className="w-full max-w-md">
                 <CardHeader>
                     <CardTitle>Create an account</CardTitle>
@@ -171,7 +171,7 @@ export default function RegisterPage() {
                                 required
                             />
                         </div>
-                        <div className="space-y-2">
+                        <div className="space-y-2" style={{ marginBottom: "10px" }}>
                             <Label htmlFor="confirmPassword">
                                 Confirm Password
                             </Label>

@@ -28,19 +28,19 @@ export function Navigation() {
             <nav
                 className="shadow rounded-lg mx-4 my-2
                 bg-gradient-to-r
-                from-[rgba(255,255,255,0.9)] to-[rgba(240,240,240,0.9)]
-                dark:from-[rgba(17,18,20,0.75)] dark:to-[rgba(12,13,15,0.9)]
+                from-[hsl(var(--background))] to-[hsl(var(--background))]
+                dark:from-[hsl(var(--background))] dark:to-[hsl(var(--background))]
                 border border-opacity-10
                 dark:border-white dark:border-opacity-10
                 border-gray-300"
-                style={{ width: "80%" }}
+                style={{ width: "70%" }}
             >
                 <div className="container mx-auto px-6 h-16 flex items-center justify-between">
                     <div className="flex items-center">
                         <Logo />
                     </div>
 
-                    <div className="hidden md:flex space-x-8">
+                    <div className="hidden md:flex space-x-12">
                         <a href="#" className="text-[#9c9c9d] dark:hover:text-gray-50 hover:text-gray-700 text-[14px] font-medium leading-normal tracking-[0.2px] px-[var(--spacing-1)] py-[var(--spacing-1-5)] whitespace-nowrap rounded-[var(--rounding-sm)] transition-all duration-200 ease-in-out">
                             Store
                         </a>
@@ -56,7 +56,7 @@ export function Navigation() {
                     </div>
 
                     <div className="flex items-center space-x-4">
-                        <Button variant="outline" onClick={handleGoogleNavigation}>Log in</Button>
+                        <Button variant="default" onClick={handleGoogleNavigation}>Log in</Button>
                         <ThemeToggle />
                     </div>
                 </div>

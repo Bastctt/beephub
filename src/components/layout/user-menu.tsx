@@ -17,24 +17,24 @@ export function UserMenu() {
             <Button
                 onClick={handleGoogleNavigation}
                 variant="outline"
-                className="hover:bg-blue-500 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105"
+                className="hover:bg-[hsl(4_84%_56%)] hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105 border-none"
             >
                 <FontAwesomeIcon icon={faGoogle} className="mr-2" />
                 Google
             </Button>
-            <Button variant="outline" className="hover:bg-pink-500 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105">
+            <Button variant="outline" className="hover:bg-pink-500 hover:text-white border-none transition-all duration-500 ease-in-out transform hover:scale-105">
                 <FontAwesomeIcon icon={faInstagram} className="mr-2" />
                 Instagram
             </Button>
-            <Button variant="outline" className="hover:bg-blue-700 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105">
+            <Button variant="outline" className="hover:bg-blue-700 hover:text-white border-none transition-all duration-500 ease-in-out transform hover:scale-105">
                 <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
                 LinkedIn
             </Button>
-            <Button variant="outline" className="hover:bg-green-500 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105">
+            <Button variant="outline" className="hover:bg-green-500 hover:text-white border-none transition-all duration-500 ease-in-out transform hover:scale-105">
                 <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
                 WhatsApp
             </Button>
-            <Button variant="outline" className="hover:bg-sky-500 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105">
+            <Button variant="outline" className="hover:bg-sky-500 hover:text-white border-none transition-all duration-500 ease-in-out transform hover:scale-105">
                 <FontAwesomeIcon icon={faXTwitter} className="mr-2" />
                 X
             </Button>
