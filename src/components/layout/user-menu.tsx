@@ -17,7 +17,7 @@ export function UserMenu() {
             <Button
                 onClick={handleGoogleNavigation}
                 variant="outline"
-                className="hover:bg-blue-500 hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105 border-none"
+                className="hover:bg-[hsl(4_84%_56%)] hover:text-white transition-all duration-500 ease-in-out transform hover:scale-105 border-none"
             >
                 <FontAwesomeIcon icon={faGoogle} className="mr-2" />
                 Google
